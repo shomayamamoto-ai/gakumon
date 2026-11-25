@@ -1,5 +1,5 @@
 /* オフライン対応:一度開いたページ・本は、電波がなくても読めるようにする */
-const VERSION = 'gk-202611250435';
+const VERSION = 'gk-202611250443';
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(['./', 'index.html', 'css/style.css', 'js/books.js', 'js/app.js', 'manifest.webmanifest', 'icons/icon.svg'])).then(() => self.skipWaiting()));
 });

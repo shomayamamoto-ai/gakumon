@@ -4,7 +4,7 @@ GK.addBook({
   name: '心理学入門',
   short: '心理学',
   field: 'social',
-  color: '#9b2d5c',
+  color: '#b0306e',
   motif: 'heart',
   faculty: ['文学部(心理学科・心理学専攻)', '心理学部', '人間科学部', '教育学部'],
   about: '心理学は、人の心のはたらきと行動を、実験や調査などのデータにもとづいて調べる学問です。「なぜ忘れるのか」「なぜ思いこみをするのか」といった身近な疑問を、思いつきではなく、確かめられる方法で明らかにしていきます。人の心を「読む」技術というより、人について確かめながら考える方法を身につける学問です。',
@@ -117,7 +117,7 @@ GK.addBook({
             { q: 'エビングハウスの忘却曲線の形として正しいものはどれ?', c: ['時間がたっても記憶はまったく減らない', '一定のペースでまっすぐ減っていく', '覚えた直後に急に減り、その後はゆっくり減る', 'しばらくたってから急に減る'], a: 2, e: '忘却は学習直後に急速に進み、その後ゆるやかになります。' }
           ],
           next: ['認知心理学', '学習心理学', '教育心理学'],
-          src: [{ t: 'Miller, G. A. (1956) The magical number seven, plus or minus two(PubMed)', u: 'https://pubmed.ncbi.nlm.nih.gov/13310704/' }, { t: 'Cowan, N. (2001) The magical number 4 in short-term memory(PubMed)', u: 'https://pubmed.ncbi.nlm.nih.gov/11515286/' }, { t: 'Murre & Dros (2015) Replication and Analysis of Ebbinghaus Forgetting Curve(PMC)', u: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928' }]
+          src: [{ t: 'Miller, G. A. (1956) The magical number seven, plus or minus two(PubMed)', u: 'https://pubmed.ncbi.nlm.nih.gov/13310704/' }, { t: 'Cowan, N. (2001) The magical number 4 in short-term memory(PubMed)', u: 'https://pubmed.ncbi.nlm.nih.gov/11515286/' }, { t: 'Murre & Dros (2015) エビングハウスの忘却曲線の再現研究(PMC)', u: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4492928' }]
         },
         {
           id: 'psychology-3-2',
