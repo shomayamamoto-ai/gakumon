@@ -50,6 +50,7 @@ for (const f of files) {
         if (!(Number.isInteger(q.a) && q.a >= 0 && q.a < (q.c || []).length)) err(f, w + 'quiz' + (i + 1) + ' の a が範囲外');
         if (new Set(q.c || []).size !== (q.c || []).length) err(f, w + 'quiz' + (i + 1) + ' の選択肢が重複');
       });
+      (p.papers || []).forEach(x => (str(x.t) && str(x.p) && /^https:\/\//.test(x.u || '')) || err(f, w + 'papers の形が不正(t・p・u が必要)'));
       (p.src || []).forEach(s => (str(s.t) && /^https:\/\//.test(s.u || '')) || err(f, w + 'src の形が不正'));
       const all = JSON.stringify(p);
       if (/<[a-z]/i.test(all)) err(f, w + 'HTMLタグは使わない(**太字**のみ)');

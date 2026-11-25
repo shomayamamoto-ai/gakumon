@@ -201,6 +201,9 @@
       html += '</section>';
     });
     html += sec('重要用語') + '<dl class="terms">' + p.terms.map(function (t) { return '<div><dt>' + rt(t[0]) + '</dt><dd>' + rt(t[1]) + '</dd></div>'; }).join('') + '</dl></section>';
+    if (p.papers && p.papers.length) html += sec('論文・研究から学ぶ') + p.papers.map(function (x) {
+      return '<div class="paper"><p class="paper-t">' + (x.u ? '<a href="' + h(x.u) + '" target="_blank" rel="noopener noreferrer">' + h(x.t) + '</a>' : h(x.t)) + '</p><p>' + rt(x.p) + '</p></div>';
+    }).join('') + '</section>';
     html += sec('板書で考える(例題)') + p.ex.map(function (e, i) {
       return '<div class="board"><div class="board-h"><b>例題' + (p.ex.length > 1 ? i + 1 : '') + '</b><em>考えてみよう</em></div><div class="board-b"><p class="q">' + rt(e.q) + '</p>' +
         '<details><summary>考え方と答えを見る</summary><ol>' + e.steps.map(function (s2) { return '<li>' + rt(s2) + '</li>'; }).join('') + '</ol><p class="ans">答え:' + rt(e.a) + '</p></details></div></div>';
